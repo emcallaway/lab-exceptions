@@ -11,15 +11,16 @@ import java.io.PrintWriter;
  * @author Samuel A. Rebelsky
  * @author Your Name Here
  */
-public class ReadIntExpt1 {
+public class ReadIntExpt1
+{
+  public static void main(String[] args)
+    throws Exception
+  {
+    PrintWriter pen = new PrintWriter(System.out, true);
+    BufferedReader eyes = new BufferedReader(new InputStreamReader(System.in));
 
-    public static void main(String[] args) throws Exception {
-	PrintWriter pen = new PrintWriter(System.out, true);
-	BufferedReader eyes = new BufferedReader(new InputStreamReader(
-		System.in));
-
-	int i = IOUtils.readInt(pen, eyes, "Please enter an integer: ");
-	pen.println(i + " squared is " + (i*i));
-    } // main(String[])
+    int i = IOUtils.readInt(pen, eyes, "Please enter an integer: ");
+    pen.println(i + " squared is " + (i * i));
+  } // main(String[])
 
 } // ReadIntExpt1

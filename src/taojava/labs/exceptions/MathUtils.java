@@ -6,6 +6,7 @@ package taojava.labs.exceptions;
  * @author Samuel A. Rebelsky
  * @author Your Name Here
  */
-public class MathUtils {
+public class MathUtils
+{
 
 } // MathUtils
