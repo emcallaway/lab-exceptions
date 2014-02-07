@@ -15,14 +15,21 @@ public class IOUtils
    * Prompt for and read an integer.
    */
   public static int readInt(PrintWriter pw, BufferedReader br, String prompt)
-    throws Exception
+    //throws Exception
   {
     if (!prompt.equals(""))
       {
         pw.print(prompt);
         pw.flush();
       } // if there is a prompt
+    try
+    {
     String response = br.readLine();
     return Integer.parseInt(response);
+    } // try to read and parse a string
+    catch (Exception e)
+    {
+      return 0;
+    } // Reading/parsing fails
   } // readInt
 } // class IOUtils
